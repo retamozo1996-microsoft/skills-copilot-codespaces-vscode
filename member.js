@@ -1,15 +1,18 @@
-function skillMember() {
+function skillsMember() {
   return {
-    name: "skillMember",
-    description: "A member with a specific skill",
-    type: 2,
-    options: [
+    name: "Member",
+    id: "member",
+    description: "Member is a member of the organization.",
+    skills: [
       {
-        name: "skill",
-        description: "The skill of the member",
-        type: 3,
-        required: true,
+        name: "member",
+        description: "Member is a member of the organization.",
+        type: "member",
+        level: 1,
+        tags: ["member", "organization"],
       },
     ],
+    traits: [],
+    level: 1,
   };
 }
